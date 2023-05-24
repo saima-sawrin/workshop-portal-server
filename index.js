@@ -18,6 +18,7 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 
     try{
       const eventsCollection = client.db('workshop_portal').collection('events');
+      const usersCollection = client.db('workshop_portal').collection('user');
     
 
     app.get('/events', async(req,res)=>{
@@ -26,6 +27,30 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
         const events = await (await cursor.toArray());
         res.send(events);
     })
+    app.get('/events/:id([0-9a-fA-F]{24})', async (req, res) => {
+      const id = req.params.id;
+      const query = { _id:new ObjectId(id) };
+      const details = await eventsCollection.findOne(query);
+      console.log(details)
+      res.send(details);
+      });
+      app.post('/events', async (req, res) => {
+        const events = req.body;
+        const result = await eventsCollection.insertOne(events);
+        res.send(result);
+        })
+  
+    app.get('/users', async(req,res)=>{
+        const query = {}
+        const cursor = usersCollection.find(query);
+        const users = await (await cursor.toArray());
+        res.send(users);
+    })
+    app.post('/users', async (req, res) => {
+      const users = req.body;
+      const result = await usersCollection.insertOne(users);
+      res.send(result);
+      })
 
 
 }

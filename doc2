@@ -1,0 +1,40 @@
+const express = require('express');
+const cors = require('cors');
+const bodyParser = require('body-parser')
+const  mongoose  = require('mongoose')
+const eventHandler = require("./Route/eventHandler")
+
+
+
+// middle wares
+const app = express();
+app.use(express.json());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
+//ROUTES
+app.use('/events', eventHandler)
+
+app.use(cors());
+
+/* MONGOOSE SETUP */
+mongoose
+.connect("mongodb://localhost/workshop",{
+  useNewUrlParser: true,
+    useUnifiedTopology: true,
+})
+.then(()=> console.log('connect successful'))
+.catch((error) => console.log(error));
+
+
+// default error handler
+function errorHandler(err , req , res , next){
+  if(res.headersSent){
+    return next(err)
+  }
+  res.status(500).json({error: err});
+}
+
+
+app.listen(3000, () => {console.log('workshop portal server is running 3000');
+})

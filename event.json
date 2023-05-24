@@ -1,48 +1,74 @@
 [
     {
-        "_id": "1",
+       
         "Title": "Modern APIs with FastAPI MongoDB and Python",
         "Description": "Learn to use FastAPI, async + await, Pydantic, and MongoDB to build modern web apps with   Python and become the FastAPI expert on your team.",
-        "Date": "29 May 2023",
-        "Location": "Dhaka"
+        "Date": "29-05-2023",
+        "Location": "Dhaka",
+        "host" : "Michael Kennedy",
+        "aboutHost": "A Python Software Foundation Fellow",
+        "course": "FastAPI + MongoDB",
+        "overview": "FastAPI is the fastest growing Python web and API framework, period. Take this course to add FastAPI to your toolbox.",
+        "forWhom":[
+            ["Anyone who wants to build an API  with Python as the backend language "],
+            ["Devs who want to leverage modern python features for APIs"],
+            ["People who want to leverage a modern database such as mongoDB"]
+            
+        ]
+
+
 
     },
     {
-        "_id": "2",
+    
         "Title": "Jump Into Data Science in Python",
         "Description": "Stop clicking through Excel and start comfortably coding in Python with this live cohort-based course brought to you by Yale Faculty.",
-        "Date": "26 May 2023",
+        "Date": "26-05-2023",
         "Location": "Chittagong",
         "host": "Dr. Elena Grewal and Sarah McGowan",
         "aboutHost": "Yale Faculty, ex-Head of Data Science @ Airbnb, ex-Bain, Stanford University",
-        "overview": "Develop the most useful day-to-day data science skills by working closely with the instructors during this intensive 3-week course. Have fun alongside a group of curious students (welcoming to women and non-binary students!). This course will change your mind about coding being boring or too hard.The class is a flipped class, meaning you'll watch tailor-made videos at your own pace, and we'll convene 2 times a week (from 6:00-7:30pm EST) for hands-on practice. Throughout, we'll be here to answer questions and give you personal feedback. We are here for you. This class is best for students with familiarity with datasets (eg. Excel tables), and a solid understanding of high school math. The class is based on the top-rated class Dr. Grewal and McGowan teach at the Yale School of Environment."
+        "course": "Real World Data Science in 3 Weeks",
+        "overview": "Develop the most useful day-to-day data science skills by working closely with the instructors during this intensive 3-week course. Have fun alongside a group of curious students (welcoming to women and non-binary students!). This course will change your mind about coding being boring or too hard.The class is a flipped class, meaning you'll watch tailor-made videos at your own pace, and we'll convene 2 times a week (from 6:00-7:30pm EST) for hands-on practice. Throughout, we'll be here to answer questions and give you personal feedback. We are here for you. This class is best for students with familiarity with datasets (eg. Excel tables), and a solid understanding of high school math. The class is based on the top-rated class Dr. Grewal and McGowan teach at the Yale School of Environment.",
+        "forWhom":[
+            ["New Data Scientist " ],
+            ["Curious about Coding"],
+            ["Analyst and Research"]
+                 
+            
+        ]
     },
     {
-        "_id": "3",
+       
         "Title": "UX Intensive",
         "Description": "We help creatives to confidently apply the UX process used by top companies to build useful and meaningful products.",
-        "Date": "22 March 2023",
-        "Location": "Khulna"
+        "Date": "22-03-2023",
+        "Location": "Khulna",
+        "host": "Ludovic Delmas and Colton Schweitzer",
+        "aboutHost": "UX Leaders | 18+ years of combined UX expertise | 25k+ subs on socials",
+        "course": "Learn UX Design",
+        "overview": "We help creatives to confidently apply the UX process used by top companies to build useful and meaningful products.",
+        "forWhom":[
+            ["If you are creative feeling undervalued and underpaid , and you want to learn in demand UX skills,this course is for you. "],
+            ["You want to create useful products backed by data but you don't know what process to slow "],
+            ["You are tired making pretty design and want to make a more tangible impact on peoples lives "]
+           
+        ]
     },
     {
-        "_id": "4",
-        "Title": "Digital Wellbeing - Use technology as a tool not a distraction",
-        "Description": "Regain control over your attention, productivity and creativity. Practical tips beyond simply putting your phone away.",
-        "Date": "01 February 2023",
-        "Location": "Dhaka"
-    },
-    {
-        "_id": "5",
-        "Title": "Design System BootCamp",
-        "Description": "Gain the skills & confidence to build a design system in Figma. Whether you build a design system for your product or just for practice. You'll become an expert in Figma's most advanced features and workflows.",
-        "Date": "23 January 2023",
-        "Location": "Sylhet"
-    },
-    {
-        "_id": "6",
+     
         "Title": "Mastering Software Engineering",
         "Description": "Learn insights into software engineering gained from developing large-scale products at companies such as Uber, Airbnb, and Microsoft",
-        "Date": "25 December 2022",
-        "Location": "Chittagong"
+        "Date": "25-12-2022",
+        "Location": "Chittagong",
+        "host": "Georges El Khoury",
+        "aboutHost": "Software Engineer. Ex: Uber, Airbnb and Microsoft",
+        "course": "Software engineering lessons from the front lines",
+        "overview": "In this course, I will share all the (hard-learned) lessons I acquired building and maintaining software used on a daily basis by millions of people.This course is not theoretical and covers practical topics you go through and can apply in a typical software engineering day to day.This course is divided into three parts:1) Building Software: Code Reviews, Unit testing, Engineering Requirements Document 2) Maintaining Software: Observability & Monitoring, Outage Management, Release Management, Migrations, Monolith/Microservices.3) Team & Culture: Project Management, Conducting Technical Interviews, Onboarding Team Members, Software Engineering Career Ladders",
+        "forWhom":[
+            ["Software Engineers who want to advance their careers"],
+            ["Software Engineers who want to learn Best practice"],
+            ["Techies who want to understand practical software development process and methodology"]
+             
+        ]
     }
 ]
